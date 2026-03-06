@@ -1,106 +1,99 @@
-# NovaTech Retail Ltd – Sales Transaction Analysis
+# Brightcore Solutions Ltd – Expense Analysis Dashboard
 
 ## Project Overview
+This project analyzes the operational expenses of Brightcore Solutions Ltd to understand spending patterns, payment efficiency, vendor dependency, and departmental cost distribution.
 
-This project analyzes retail sales transactions for NovaTech Retail Ltd to evaluate sales performance, profitability, discount strategies, and sales representative productivity.
+The goal of the analysis is to provide management with insights into how company resources are being spent, identify areas of cost concentration, and highlight potential opportunities for financial optimization.
 
-The goal of the analysis is to help management understand revenue drivers, identify high-performing products, assess the impact of discounts on profitability, and monitor sales performance across different locations.
-
-The analysis was conducted using **Power BI** to transform raw sales transaction data into an interactive dashboard.
+The analysis was performed using **Power BI**, where raw expense transaction data was transformed into an interactive dashboard for decision-making.
 
 ---
 
 ## Business Problem
 
-Retail companies must constantly monitor sales performance to maintain profitability and optimize their pricing strategies.
+Companies often struggle with tracking operational expenses across multiple departments, vendors, and payment channels.
 
-This analysis addresses key operational and strategic questions including:
+This analysis addresses key financial questions such as:
 
-- Which products generate the most profit?
-- Which sales representatives drive the most revenue?
-- How do discounts affect overall profitability?
-- What are the monthly revenue trends?
-- Which regions generate the highest sales?
+- Which departments contribute most to company expenses?
+- How much of the company’s expenses are still unpaid?
+- Which vendors receive the highest payments?
+- How do expenses fluctuate throughout the year?
+- What cost centers are responsible for the largest share of spending?
 
 ---
 
 ## Business Questions Answered
 
-1. What is the **total revenue generated** by NovaTech Retail?
-2. What is the **total profit and overall profit margin**?
-3. Which **products generate the highest profit**?
-4. Which **sales representatives drive the most revenue**?
-5. How do **discount levels affect profit**?
-6. What is the **monthly revenue trend** across the year?
-7. Which **locations contribute most to sales performance**?
+1. What is the **total operational expense** incurred by Brightcore Solutions?
+2. What percentage of expenses have been **paid vs pending**?
+3. Which **department contributes the most to expenses**?
+4. Which **vendors receive the highest payments**?
+5. How do **monthly expenses trend throughout the year**?
+6. Which **cost centers are responsible for the largest spending**?
 
 ---
 
 ## Dataset Description
 
-The dataset contains retail sales transaction records including product details, pricing, discounts, and sales representative information.
+The dataset represents expense transactions recorded by the company.
 
-Key columns include:
+Key fields include:
 
 - Transaction ID
-- Product Name
-- Sales Representative
-- City / Location
-- Unit Sold
-- Revenue
-- Profit
-- Discount
-- Date of Sale
-- Product Category
+- Department
+- Vendor
+- Payment Status (Paid / Pending)
+- Payment Method (Cash / Card / Transfer)
+- Cost Center
+- Expense Amount
+- Expense Date
 
 ---
 
 ## Data Preparation
 
-Data cleaning and transformation steps included:
+The following steps were performed before analysis:
 
-- Removing incomplete records
-- Standardizing product and sales representative names
-- Formatting date fields for time-series analysis
-- Creating calculated measures such as:
-  - Total Revenue
-  - Total Profit
-  - Profit Margin %
-  - Net Revenue
-  - Average Discount
+- Removed incomplete or inconsistent records
+- Converted expense values into numeric format
+- Standardized department and vendor naming
+- Created calculated measures in Power BI for:
+  - Total Expense
+  - Paid Expense
+  - Pending Expense
+  - Monthly Expense Trend
+  - Expense Growth %
 
 ---
 
 ## Key Metrics (KPIs)
 
-- **Total Revenue:** $953.36K
-- **Total Profit:** $285.57K
-- **Units Sold:** 1,466
-- **Average Discount:** $5.61
-- **Profit Margin:** 30%
+The dashboard tracks the following KPIs:
+
+- **Total Expense:** ₦1.55bn
+- **Total Paid Expense:** ₦578.80M
+- **Total Pending Expense:** ₦966.95M
+- **Pending Expense Percentage:** 62.56%
+- **Monthly Expense Growth:** 9%
 
 ---
 
 ## Dashboard Insights
 
-### 1. Product Profitability
-The **Monitor product line contributes approximately 25% of total profit**, making it the most profitable product category.
+### 1. Department Spending
+Operations and IT departments account for **77% of total expenses**, indicating that these areas drive the majority of operational costs.
 
-This indicates strong market demand for display hardware.
+### 2. Payment Status
+Approximately **62.56% of expenses are still pending**, which may indicate delayed payments or outstanding financial obligations.
 
-### 2. Sales Representative Performance
-Sales rep **Kenny generates the highest net revenue**, contributing roughly **45% of total revenue**, indicating strong sales performance.
+### 3. Vendor Dependency
+The company spends the most on **Local ISP, Google Cloud, and Generator Fuel**, highlighting reliance on technology infrastructure and operational utilities.
 
-### 3. Discount Strategy
-Sales rep **Tunde offers the highest average discount but produces the lowest revenue**, suggesting that excessive discounting may reduce profitability.
+### 4. Expense Trend
+Expenses peaked in **May**, suggesting either a major operational investment or seasonal activity.
 
-### 4. Revenue Trend
-Revenue fluctuates throughout the year, with a **notable drop in August**.
-
-This could indicate seasonal demand patterns or reduced sales activity.
-
-### 5. Discount Impact on Profit
-The analysis shows **diminishing returns on profit as discounts increase**, suggesting that maintaining lower discount levels may improve profitability.
+Further investigation into May transactions may reveal the reason for the spike.
 
 ---
 
@@ -108,24 +101,24 @@ The analysis shows **diminishing returns on profit as discounts increase**, sugg
 
 - Power BI
 - Excel
-- DAX
+- DAX (Data Analysis Expressions)
 
 ---
 
 ## Business Impact
 
-This analysis helps NovaTech Retail:
+This dashboard enables management to:
 
-- Identify top-performing products
-- Evaluate the effectiveness of discount strategies
-- Monitor sales team performance
-- Track revenue trends over time
-- Optimize pricing and sales strategies
+- Monitor expense trends in real time
+- Identify departments with high operational costs
+- Track pending payments and manage financial obligations
+- Evaluate vendor dependency and spending concentration
 
 ---
+
 ## Dashboard Preview
 
-![Dashboard](brightocoresolutions.png)
+![Dashboard](brightcoresolutionsltd.png)
 
 ---
 ## Author
